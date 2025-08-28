@@ -1,4 +1,4 @@
-module github.com/OpsMx/oauth-bridge
+module github.com/OpsMx/oauth-bridge-client
 
 go 1.23.6
 
