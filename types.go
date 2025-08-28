@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/OpsMx/oauth-bridge/internal/types"
+	"github.com/OpsMx/oauth-bridge-client/internal/types"
 )
 
 // StartInstallationResponse represents the response from start installation

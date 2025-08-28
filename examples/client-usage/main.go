@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/OpsMx/oauth-bridge"
+	"github.com/OpsMx/oauth-bridge-client"
 )
 
 func main() {

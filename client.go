@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/OpsMx/oauth-bridge/internal/jwt"
-	"github.com/OpsMx/oauth-bridge/internal/types"
+	"github.com/OpsMx/oauth-bridge-client/internal/jwt"
+	"github.com/OpsMx/oauth-bridge-client/internal/types"
 )
 
 // Client represents the OAuth Bridge client

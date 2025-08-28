@@ -46,15 +46,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.version.outputs.version }}
-          release_name: OAuth Bridge ${{ steps.version.outputs.version }}
+          release_name: OAuth Bridge Client ${{ steps.version.outputs.version }}
           body: |
-            ## OAuth Bridge ${{ steps.version.outputs.version }}
+            ## OAuth Bridge Client ${{ steps.version.outputs.version }}
 
-            A secure OAuth bridge service for GitHub App installations in on-premises SSD environments.
+            A secure OAuth bridge client SDK for GitHub App installations in on-premises SSD environments.
 
             ### What's New
             - Clean single-module architecture
-            - Simplified client SDK import: `github.com/OpsMx/oauth-bridge`
+            - Simplified client SDK import: `github.com/OpsMx/oauth-bridge-client`
             - Enhanced ECC JWT authentication
             - Zero-ingress security architecture
 
@@ -62,7 +62,7 @@ jobs:
 
             **Client SDK:**
             ```bash
-            go get github.com/OpsMx/oauth-bridge@${{ steps.version.outputs.version }}
+            go get github.com/OpsMx/oauth-bridge-client@${{ steps.version.outputs.version }}
             ```
 
             **Server Binaries:**
@@ -72,17 +72,12 @@ jobs:
 
             **Client SDK:**
             ```go
-            import "github.com/OpsMx/oauth-bridge"
+            import "github.com/OpsMx/oauth-bridge-client"
 
             client, err := oauthbridge.NewClient("my-service")
             ```
 
-            **Server:**
-            ```bash
-            ./oauth-bridge -configFile /app/config/oauth-bridge.yaml
-            ```
-
-            See the [README](https://github.com/OpsMx/oauth-bridge/blob/main/README.md) for complete documentation.
+            See the [README](https://github.com/OpsMx/oauth-bridge-client/blob/main/README.md) for complete documentation.
           draft: false
           prerelease: false
 

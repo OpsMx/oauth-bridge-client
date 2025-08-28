@@ -6,16 +6,16 @@ ECC-based JWT utilities for OAuth Bridge authentication with deterministic key d
 
 ```bash
 # Get latest version
-go get github.com/OpsMx/oauth-bridge/pkg/jwt@latest
+go get github.com/OpsMx/oauth-bridge-client/internal/jwt@latest
 
 # Get specific version
-go get github.com/OpsMx/oauth-bridge/pkg/jwt@v1.0.0
+go get github.com/OpsMx/oauth-bridge-client/internal/jwt@v1.0.0
 ```
 
 ## Usage
 
 ```go
-import "github.com/OpsMx/oauth-bridge/pkg/jwt"
+import "github.com/OpsMx/oauth-bridge-client/internal/jwt"
 ```
 
 ## Features
@@ -71,5 +71,5 @@ git tag --list | grep "pkg/jwt"
 ## Dependencies
 
 - `github.com/golang-jwt/jwt/v5` - JWT handling
-- `github.com/OpsMx/oauth-bridge/pkg/types` - Payload types
+- `github.com/OpsMx/oauth-bridge-client/internal/types` - Payload types
 - Standard Go crypto libraries

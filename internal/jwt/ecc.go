@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/OpsMx/oauth-bridge/internal/types"
+	"github.com/OpsMx/oauth-bridge-client/internal/types"
 )
 
 // Service provides ECC JWT operations using a master secret
